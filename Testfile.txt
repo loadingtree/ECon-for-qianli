@@ -1,2 +1,3 @@
 This is my first time learning git
 I put all files in disk C
+This line is a test line. in order to understand status and diff
