@@ -1,0 +1,2 @@
+This is my first time learning git
+I put all files in disk C
