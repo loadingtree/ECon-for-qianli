@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "usart.h": "c",
+        "gpio.h": "c",
+        "tim.h": "c",
+        "delay.h": "c"
+    }
+}

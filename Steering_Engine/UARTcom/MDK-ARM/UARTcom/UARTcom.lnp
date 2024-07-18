@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"uartcom\startup_stm32f103xe.o"
+"uartcom\delay.o"
+"uartcom\main.o"
+"uartcom\gpio.o"
+"uartcom\tim.o"
+"uartcom\stm32f1xx_it.o"
+"uartcom\stm32f1xx_hal_msp.o"
+"uartcom\stm32f1xx_hal_gpio_ex.o"
+"uartcom\stm32f1xx_hal_tim.o"
+"uartcom\stm32f1xx_hal_tim_ex.o"
+"uartcom\stm32f1xx_hal.o"
+"uartcom\stm32f1xx_hal_rcc.o"
+"uartcom\stm32f1xx_hal_rcc_ex.o"
+"uartcom\stm32f1xx_hal_gpio.o"
+"uartcom\stm32f1xx_hal_dma.o"
+"uartcom\stm32f1xx_hal_cortex.o"
+"uartcom\stm32f1xx_hal_pwr.o"
+"uartcom\stm32f1xx_hal_flash.o"
+"uartcom\stm32f1xx_hal_flash_ex.o"
+"uartcom\stm32f1xx_hal_exti.o"
+"uartcom\system_stm32f1xx.o"
+--strict --scatter "UARTcom\UARTcom.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "UARTcom.map" -o UARTcom\UARTcom.axf
