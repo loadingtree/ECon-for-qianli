@@ -75,6 +75,7 @@ int main(void)
 
   /* USER CODE BEGIN Init */
   delay_init(72);
+
   /* USER CODE END Init */
 
   /* Configure the system clock */
@@ -89,9 +90,9 @@ int main(void)
   MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
   uint16_t ledrpwmval = 0;
-  uint16_t motorpwm = 3000;
+  uint16_t motorpwm = 1000;
   uint8_t dir = 0;
-  //__HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_2, 2000);这句是试验，只给一个占空比1：9的脉冲能不能动，结果是不行
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -109,16 +110,17 @@ int main(void)
       dir = 0;
     if (ledrpwmval == 0)
       dir = 1;*/
-    __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_2, motorpwm);//必须得是变量，常量动不了，而且下面的几个量和舵机的运动位置都没有关系
-    delay_ms(20);
-    if (dir)
-      motorpwm += 200;
-    else
-      motorpwm -= 200;
-    if (motorpwm > 3000)
-      dir = 0;
-    if (motorpwm < 1500)
-      dir = 1;
+     __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_2, 10u);
+        delay_ms(20);
+    // if (dir)
+      // motorpwm = (uint16_t)(2500);
+//     else
+//        motorpwm =(uint16_t)(500);
+//       if (motorpwm == (uint16_t)(2500))
+//          dir = 0;
+//      if (motorpwm == (uint16_t)(500))
+//          dir = 1;
+//      MX_TIM3_REInit(motorpwm);
   }
   /* USER CODE END 3 */
 }

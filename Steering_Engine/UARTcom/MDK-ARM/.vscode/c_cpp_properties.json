@@ -3,17 +3,17 @@
         {
             "name": "UARTcom",
             "includePath": [
-                "e:\\stm32doc\\cubeMX\\UARTcom\\Core\\Inc",
-                "e:\\stm32doc\\cubeMX\\UARTcom\\Drivers\\STM32F1xx_HAL_Driver\\Inc",
-                "e:\\stm32doc\\cubeMX\\UARTcom\\Drivers\\STM32F1xx_HAL_Driver\\Inc\\Legacy",
-                "e:\\stm32doc\\cubeMX\\UARTcom\\Drivers\\CMSIS\\Device\\ST\\STM32F1xx\\Include",
-                "e:\\stm32doc\\cubeMX\\UARTcom\\Drivers\\CMSIS\\Include",
-                "e:\\stm32doc\\cubeMX\\UARTcom\\Drivers\\User",
+                "e:\\ECongit\\Steering_Engine\\UARTcom\\Core\\Inc",
+                "e:\\ECongit\\Steering_Engine\\UARTcom\\Drivers\\STM32F1xx_HAL_Driver\\Inc",
+                "e:\\ECongit\\Steering_Engine\\UARTcom\\Drivers\\STM32F1xx_HAL_Driver\\Inc\\Legacy",
+                "e:\\ECongit\\Steering_Engine\\UARTcom\\Drivers\\CMSIS\\Device\\ST\\STM32F1xx\\Include",
+                "e:\\ECongit\\Steering_Engine\\UARTcom\\Drivers\\CMSIS\\Include",
+                "e:\\ECongit\\Steering_Engine\\UARTcom\\Drivers\\User",
                 "E:\\keil_arm\\ARM\\ARMCC\\include",
                 "E:\\keil_arm\\ARM\\ARMCC\\include\\rw",
-                "e:\\stm32doc\\cubeMX\\UARTcom\\MDK-ARM",
-                "e:\\stm32doc\\cubeMX\\UARTcom\\Core\\Src",
-                "e:\\stm32doc\\cubeMX\\UARTcom\\Drivers\\STM32F1xx_HAL_Driver\\Src"
+                "e:\\ECongit\\Steering_Engine\\UARTcom\\MDK-ARM",
+                "e:\\ECongit\\Steering_Engine\\UARTcom\\Core\\Src",
+                "e:\\ECongit\\Steering_Engine\\UARTcom\\Drivers\\STM32F1xx_HAL_Driver\\Src"
             ],
             "defines": [
                 "USE_HAL_DRIVER",
