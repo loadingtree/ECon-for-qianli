@@ -52,3 +52,4 @@ void MX_TIM3_REInit(uint16_t pwm);
 #endif
 
 #endif /* __TIM_H__ */
+

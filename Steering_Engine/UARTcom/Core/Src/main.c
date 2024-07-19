@@ -110,17 +110,16 @@ int main(void)
       dir = 0;
     if (ledrpwmval == 0)
       dir = 1;*/
-     __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_2, 10u);
-        delay_ms(20);
-    // if (dir)
-      // motorpwm = (uint16_t)(2500);
-//     else
-//        motorpwm =(uint16_t)(500);
-//       if (motorpwm == (uint16_t)(2500))
-//          dir = 0;
-//      if (motorpwm == (uint16_t)(500))
-//          dir = 1;
-//      MX_TIM3_REInit(motorpwm);
+    __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_2, motorpwm);
+    delay_ms(20);
+    if (dir)
+      motorpwm += (uint16_t)(20);
+    else
+      motorpwm -= (uint16_t)(20);
+    if (motorpwm > (uint16_t)(2500))
+      dir = 0;
+    if (motorpwm < (uint16_t)(500))
+      dir = 1;
   }
   /* USER CODE END 3 */
 }
