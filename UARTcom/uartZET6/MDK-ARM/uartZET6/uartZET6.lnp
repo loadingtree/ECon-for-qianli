@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"uartzet6\startup_stm32f103xe.o"
+"uartzet6\main.o"
+"uartzet6\gpio.o"
+"uartzet6\usart.o"
+"uartzet6\stm32f1xx_it.o"
+"uartzet6\stm32f1xx_hal_msp.o"
+"uartzet6\stm32f1xx_hal_gpio_ex.o"
+"uartzet6\stm32f1xx_hal_tim.o"
+"uartzet6\stm32f1xx_hal_tim_ex.o"
+"uartzet6\stm32f1xx_hal_uart.o"
+"uartzet6\stm32f1xx_hal.o"
+"uartzet6\stm32f1xx_hal_rcc.o"
+"uartzet6\stm32f1xx_hal_rcc_ex.o"
+"uartzet6\stm32f1xx_hal_gpio.o"
+"uartzet6\stm32f1xx_hal_dma.o"
+"uartzet6\stm32f1xx_hal_cortex.o"
+"uartzet6\stm32f1xx_hal_pwr.o"
+"uartzet6\stm32f1xx_hal_flash.o"
+"uartzet6\stm32f1xx_hal_flash_ex.o"
+"uartzet6\stm32f1xx_hal_exti.o"
+"uartzet6\system_stm32f1xx.o"
+--strict --scatter "uartZET6\uartZET6.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "uartZET6.map" -o uartZET6\uartZET6.axf
