@@ -2,3 +2,14 @@
 c8t6版本的程序只有从u8到浮点和浮点到u8的两个转换，ZET6的还有浮点转ascii码的（比较简陋，而且 不完善）
 浮点型和uint8*直接转化的没找到，想到先折中换成uint32的
 程序以ZET6里的为准，因为后面还改过几次
+将主程序main中usercode3改为一下代码可验证浮点转换
+    test=FloatToU32(num_test);
+    U32_to_U8(test,TxData1);//发出端对float型进行编码
+    HAL_UART_Transmit_IT(&huart1,TxData1,4);
+    HAL_Delay(1000);
+    test=U8_to_U32(TxData1);
+    num_test=U32ToFloat(test);//接收端将四个u8转化成浮点型
+    float_to_u8_realnum(num_test,TxData1);//转化成字符
+    HAL_UART_Transmit_IT(&huart1,TxData1,4);
+    LED0_TOGGLE;
+    HAL_Delay(1000);
